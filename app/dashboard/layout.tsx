@@ -3,7 +3,7 @@ import AccountDropdown from "@/components/account-dropdown";
 export default function Layout({
   children,
 }: Readonly<{
-  children: React.ReactNode,
+  children: React.ReactNode;
 }>) {
   return (
     <div className="bg-muted min-h-svh w-full">
