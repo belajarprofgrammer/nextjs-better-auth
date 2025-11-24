@@ -3,7 +3,12 @@ import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
 
 const protectedRoutes = ["/dashboard"];
-const publicRoutes = ["/", "/register"];
+const publicRoutes = [
+  "/",
+  "/register",
+  "/forgot-password",
+  "/reset-password",
+];
 
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
